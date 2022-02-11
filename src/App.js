@@ -11,7 +11,7 @@ import Location from "./Components/Location";
 import Pricing from "./Components/Pricing";
 import MasterPlan from "./Components/MaterPlan/MasterPlan";
 import VirtualTour from "./Components/VirtualTour";
-import Contact from "./Contact";
+import Contact from "./Components/Contact";
 import FixedIcons from "./Components/FixedIcons";
 import { Col, Container, Row } from "react-bootstrap";
 

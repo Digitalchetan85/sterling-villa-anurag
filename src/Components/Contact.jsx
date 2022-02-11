@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Button, Row, Col, Container } from "react-bootstrap";
+import { Button, Row, Col, Container, Image } from "react-bootstrap";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as Yup from "yup";
 import axios from "axios";
 
@@ -60,7 +61,25 @@ const Contact = () => {
               onSubmit={onSubmit}
             >
               <Form className="bg-white p-3 rounded shadow">
-                <h2 className="py-3 text-center text-primary">Contact Us</h2>
+                <h4 className="py-3 text-center text-primary">
+                  Get Our Experts Call
+                </h4>
+                <Row className="mb-3">
+                  <Col md={12}>
+                    <div className="mb-3">
+                      <a
+                        href="tel:08095999000"
+                        className="btn btn-primary form-control fw-bold py-2"
+                      >
+                        <FontAwesomeIcon
+                          icon="fa-solid fa-phone-volume"
+                          className="rounded text-white"
+                        />{" "}
+                        +91 80959 99000
+                      </a>
+                    </div>
+                  </Col>
+                </Row>
                 <Row className="mb-3">
                   <Col md={12}>
                     <div className="mb-3">
@@ -121,7 +140,10 @@ const Contact = () => {
                 <Row className="mb-3">
                   <Col md={12}>
                     <div className="">
-                      <Button className="btn btn-primary form-control" type="submit">
+                      <Button
+                        className="btn btn-success text-white fw-bold form-control"
+                        type="submit"
+                      >
                         Submit
                       </Button>
                     </div>

@@ -149,3 +149,10 @@ p {
   top: 110px !important;
   z-index: 0;
 }
+
+#UNIQUE_ID {
+  display: none !important;
+  .arrow {
+    display: none !important;
+  }
+}

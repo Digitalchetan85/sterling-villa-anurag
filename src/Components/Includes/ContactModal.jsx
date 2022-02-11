@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Button, Modal, Row, Col, Image } from "react-bootstrap";
+// import CountryDropdown from "country-dropdown-with-flags-for-react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import Logo from "../../images/logo-1.png"
+import Logo from "../../images/logo-1.png";
 
 const ContactModal = (props) => {
   const [formStatus, setformStatus] = useState("");
@@ -54,12 +56,11 @@ const ContactModal = (props) => {
     <div>
       <Modal show={props.show} onHide={props.handleClose} centered id="cre">
         <Modal.Header closeButton className="border-0 bg-primary">
-        <Modal.Title className="text-white text-titlecase border-0">
-             {props.title}
+          <Modal.Title className="text-white text-titlecase border-0">
+            {props.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-
           <div className="text-center py-3">
             <Image src={Logo} alt="" className="img-fluid" />
           </div>
@@ -71,6 +72,14 @@ const ContactModal = (props) => {
           >
             <Form className="p-3">
               <Row className="mb-3">
+                {/* <Col md={2} className="p-0">
+                  <div className="text-end py-2">
+                    <FontAwesomeIcon
+                      icon="fas fa-user"
+                      className="border-0 fs-4 rounded text-primary"
+                    />
+                  </div>
+                </Col> */}
                 <Col md={12}>
                   <div className="mb-3">
                     <Field
@@ -87,6 +96,14 @@ const ContactModal = (props) => {
                 </Col>
               </Row>
               <Row className="mb-3">
+                {/* <Col md={2} className="p-0">
+                  <div className="text-end py-2">
+                    <FontAwesomeIcon
+                      icon="fas fa-envelope"
+                      className="border-0 fs-4 rounded text-primary"
+                    />
+                  </div>
+                </Col> */}
                 <Col md={12}>
                   <div className="mb-3">
                     <Field
@@ -103,6 +120,17 @@ const ContactModal = (props) => {
                 </Col>
               </Row>
               <Row className="mb-3">
+                {/* <Col md={2}>
+                  <div className="text-center">
+                    <CountryDropdown
+                      id="UNIQUE_ID"
+                      className="YOUR_CSS_CLASS form-control border ps-0 pe-3 py-2"
+                      preferredCountries={["in", "gb"]}
+                      value=""
+                      handleChange={(e) => console.log(e.target.value)}
+                    ></CountryDropdown>
+                  </div>
+                </Col> */}
                 <Col md={12}>
                   <div className="mb-3">
                     <Field
@@ -112,6 +140,7 @@ const ContactModal = (props) => {
                       name="phone"
                       placeholder="Enter phone number"
                     />
+
                     <small className="text-danger">
                       <ErrorMessage name="phone" />
                     </small>
@@ -130,7 +159,10 @@ const ContactModal = (props) => {
               <Row className="">
                 <Col md={12}>
                   <div className="">
-                    <Button className="btn btn-success text-white text-uppercase form-control" type="submit">
+                    <Button
+                      className="btn btn-success text-white text-uppercase form-control"
+                      type="submit"
+                    >
                       Submit
                     </Button>
                   </div>
