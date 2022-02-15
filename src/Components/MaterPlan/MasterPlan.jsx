@@ -6,7 +6,7 @@ import ThreeBHKImages from "./ThreeBHKImages";
 import FourBHKImages from "./FourBHKImages"; 
 
 const MasterPlan = () => {
-  const [key, setKey] = useState("all");
+  const [key, setKey] = useState("all")
 
   return (
     <div id="master-plan" className="pt-3 pb-3 pt-md-5 pb-md-5">

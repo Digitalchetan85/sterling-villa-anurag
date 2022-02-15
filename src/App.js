@@ -1,11 +1,11 @@
 import "./App.scss";
 import TopHeader from "./Components/Includes/TopHeader";
 import MainSlider from "./Components/Includes/MainSlider";
-import About from "./Components/About";
+// import About from "./Components/About";
 import Amenities from "./Components/Amenities";
 import Overview from "./Components/Overview";
-import Gallery from "./Components/Gallery";
-import SideForm from "./Components/SideForm";
+// import Gallery from "./Components/Gallery";
+// import SideForm from "./Components/SideForm";
 import Footer from "./Components/Includes/Footer";
 import Location from "./Components/Location";
 import Pricing from "./Components/Pricing";
@@ -14,6 +14,7 @@ import VirtualTour from "./Components/VirtualTour";
 import Contact from "./Components/Contact";
 import FixedIcons from "./Components/FixedIcons";
 import { Col, Container, Row } from "react-bootstrap";
+import ProjectHighlights from "./Components/ProjectHighlights";
 
 function App() {
   return (
@@ -24,10 +25,11 @@ function App() {
         <Container fluid>
           <Row>
             <Col md={9}>
+              <ProjectHighlights />
               <Overview />
               <MasterPlan />
               <Pricing />
-              <Gallery />
+              {/* <Gallery /> */}
               <Amenities />
               <VirtualTour />
               {/* <SideForm /> */}

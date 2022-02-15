@@ -31,9 +31,9 @@ const Pricing = () => {
                 <tbody>
                   <tr>
                     <td>
-                      3 BHK 2T<br /> 
+                      3 BHK <br /> Type C
                     </td>
-                    <td>1372</td>
+                    <td>3000</td>
                     <td>
                       <Button
                         variant="primary"
@@ -41,42 +41,25 @@ const Pricing = () => {
                         className="my-3"
                       >
                         Download Price Sheet
-                      </Button>
-                    </td>
-                  </tr>                  <tr>
-                    <td>
-                      3 BHK 2T 
-                    </td>
-                    <td>1433</td>
-                    <td>
-                      <Button
-                        variant="primary"
-                        onClick={handleShow}
-                        className="my-3"
-                      >
-                        Download Price Sheet
-                      </Button>
-                    </td>
-                  </tr>                  <tr>
-                    <td>
-                      3 BHK 3T 
-                    </td>
-                    <td>1612</td>
-                    <td>
-                      <Button
-                        variant="primary"
-                        onClick={handleShow}
-                        className="my-3"
-                      >
-                       Download Price Sheet
                       </Button>
                     </td>
                   </tr>
                   <tr>
+                    <td>3 BHK <br /> Type B <br />Rectangular</td>
+                    <td>3500</td>
                     <td>
-                      3 BHK 3T
+                      <Button
+                        variant="primary"
+                        onClick={handleShow}
+                        className="my-3"
+                      >
+                        Download Price Sheet
+                      </Button>
                     </td>
-                    <td>1630</td>
+                  </tr>{" "}
+                  <tr>
+                  <td>3 BHK <br /> Type B <br />Radial</td>
+                    <td>3750</td>
                     <td>
                       <Button
                         variant="primary"
@@ -89,9 +72,10 @@ const Pricing = () => {
                   </tr>
                   <tr>
                     <td>
-                      3 BHK 3T<br /> (Large)
+                      4 BHK + G+2
+                      <br /> Type B<br />Rectangular
                     </td>
-                    <td>1937</td>
+                    <td>3500</td>
                     <td>
                       <Button
                         variant="primary"
@@ -104,9 +88,9 @@ const Pricing = () => {
                   </tr>
                   <tr>
                     <td>
-                      4 BHK <br /> (3BHK + Studio)
+                      4 BHK <br /> Type A<br />Radial
                     </td>
-                    <td>2309</td>
+                    <td>Approx 4675 sqft</td>
                     <td>
                       <Button
                         variant="primary"
@@ -124,7 +108,11 @@ const Pricing = () => {
         </Row>
       </Container>
 
-      <ContactModal show={show} handleClose={handleClose} title="Download Pricesheet" />
+      <ContactModal
+        show={show}
+        handleClose={handleClose}
+        title="Download Pricesheet"
+      />
     </div>
   );
 };

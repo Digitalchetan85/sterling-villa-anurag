@@ -1,14 +1,14 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
-import Image1 from "../images/gallery/image-1.png";
-import Image2 from "../images/gallery/image-2.png";
-import Image3 from "../images/gallery/image-3.png";
-import Image4 from "../images/gallery/image-4.png";
-import Image5 from "../images/gallery/image-5.png";
-import Image6 from "../images/gallery/image-6.png";
-import Image7 from "../images/gallery/image-7.png";
-import Image8 from "../images/gallery/image-8.png";
+import Image1 from "../images/projects/aspen-greens/image-1.png";
+import Image2 from "../images/projects/aspen-greens/image-2.png";
+import Image3 from "../images/projects/aspen-greens/image-3.png";
+import Image4 from "../images/projects/aspen-greens/image-4.png";
+import Image5 from "../images/projects/aspen-greens/image-5.png";
+import Image6 from "../images/projects/aspen-greens/image-6.png";
+import Image7 from "../images/projects/aspen-greens/image-7.png";
+import Image8 from "../images/projects/aspen-greens/image-8.png";
 
 const Gallery = () => {
   const images = [

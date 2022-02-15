@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Overview = () => {
   return (
@@ -9,14 +9,10 @@ const Overview = () => {
           <Col md={12}>
             <div className="">
               <h2 className="text-center text-primary py-3">Overview</h2>
-              <p className="text-center">
-                Assetz Marq 3.0 The Better Life boasts a park so large, we
-                managed to fit in acres of greenery, play areas, walking tracks,
-                outdoor fitness centers… the list goes on. Begin a new chapter
-                of your life in an eco-luxurious home at Assetz Marq 3.0, off
-                Whitefield-Hoskote road, Bengaluru.
+              <p>
+              Real Villa Grande worked by Sterling Developers is arranged in Whitefield, Bangalore. This undertaking contains absolutely 250 units. The Sterling Villa Grande costs range in the middle of 3.5 Cr crores to 4.80 Cr. Authentic Villa Grande floor plan includes 3 and 4 BHK estates. The extents of these manors range from 2610 sqft to 4675 sqft region. With a contemporary, 40,000-sqft zone clubhouse, a 3-section of land lake and a 60-feet garage, among a gathering of different amenities, you normally will undoubtedly include in the specialty of bragging.These villas near ITPL Whitefield located Kadugodi Main Road.
               </p>
-              <Row>
+              {/* <Row>
                 <Col md={3} className="text-center">
                   <Card style={{ height: "22rem" }} className="text-center shadow py-2 my-2 border-success">
                     <Card.Body>
@@ -75,11 +71,9 @@ const Overview = () => {
                     </Card.Body>
                   </Card>
                 </Col>
-              </Row>
-              <h2 className="py-3 text-center text-success">
-                Find Marq just over 3 kms from the proposed Metro Station and
-                6.5 kms from ITPL.
-              </h2>
+              </Row> */}
+              <h4 className="py-3 text-primary">About the project..... </h4>
+              <p>Sterling Villa Grande Known as Luxury Villas in Whitefield, the 4 and 3-BHK manors here are opulently made. Real Pointe makes you want for stars, while continually being grounded in hearty ethics. The Stilt, Ground and 4 story design is a house to forty 3 bed units. Planned by the prerequisites of your family, each house is exquisite, all around planned and spacious. A plenitude of air, space, and light give huge spaces that join usefulness and excellence. Peruse the Sterling Villa Grande photographs to improve perspective on this fantastic and dazzling undertaking. Authentic manor Grande resale estates are likewise accessible in the venture.</p>
             </div>
           </Col>
         </Row>

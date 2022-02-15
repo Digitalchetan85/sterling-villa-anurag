@@ -49,9 +49,9 @@ const TopHeader = () => {
           </Navbar.Brand>
           <Nav.Link
             className="btn-sm btn-danger text-white d-block d-md-none"
-            href="tel:09739269105"
+            href="tel:080959 99000 "
           >
-            <i className="fa fa-phone-volume"></i> 9739269105
+            <i className="fa fa-phone-volume"></i>  80959 99000
           </Nav.Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -65,9 +65,9 @@ const TopHeader = () => {
             <Nav>
               <Nav.Link
                 className="btn-sm btn-danger text-white"
-                href="tel:09739269105"
+                href="tel:080959 99000"
               >
-                <i className="fa fa-phone-volume"></i> + 91 9739269105
+                <i className="fa fa-phone-volume"></i> + 91 80959 99000
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
